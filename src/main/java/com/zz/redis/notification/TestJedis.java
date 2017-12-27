@@ -12,10 +12,10 @@ public class TestJedis {
         jedis.set("zz", "zzzzz");
         jedis.expire("zz", 5);
         
-       // jedis.del("zz");
+        jedis.del("zz");
         
-        //String name = jedis.get("zz");
-       // System.out.println(name);
+        String name = jedis.get("zz");
+        System.out.println(name);
         
         
 	}
